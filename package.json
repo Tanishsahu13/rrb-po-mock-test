@@ -1,0 +1,1 @@
+{"dependencies":{"pdfjs-dist":"^4.2.67"},"devDependencies":{"vite":"^5.4.0"},"name":"rrb-po-mock-test","private":true,"scripts":{"build":"vite build","dev":"vite","preview":"vite preview","test":"node test/parser.test.mjs"},"type":"module","version":"1.0.0"}
