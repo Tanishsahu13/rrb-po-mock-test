@@ -87,7 +87,7 @@ function renderUpload() {
     };
   }
   function tabPDF() {
-    body.innerHTML = `<p class="small">PDF is read in your browser (pdf.js). Two-column papers are read left column first, then right column. Answer keys headed “Answer with Explanation” (e.g. “1. Answer: C”) are matched by number.</p>
+    body.innerHTML = `<p class="small">PDF is read in your browser (pdf.js). Two-column papers are read left column first, then right column; single-column papers are read line by line. Questions can be “1.” or “Q.1”, options “a)” or “(a)”. Answer keys headed “Answer with Explanation” (“1. Answer: C”) or an “Answer Key” table (“Q.1 (d)”) are matched by number.</p>
     <label>Upload PDF</label><input type="file" id="file" accept="application/pdf,.pdf"/><div id="msg"></div>`;
     document.getElementById('file').onchange = async (e) => {
       const f = e.target.files[0]; if (!f) return;
